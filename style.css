@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+/* Navigation */
+nav{
+    display: block;
+    background-color: #fb6300;
+    color: #fff;
+}
+
+#logo{
+    float: left;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li{
+    padding: 30px;
+}
+
+nav li:hover{
+    background-color: #ff8a3c;
+}
+
+a{
+    color: #fff;
+}
+
+/* header */
+header{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("assets/Background_portfolio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid #fb6300ab;
+}
+
+#header-text{
+    text-align: center;
+    margin: 230px 0px;
+    font-size: large;
+    color: #035f63;
+}
+
+#header-text h3{
+    font-weight: normal;
+    color: #035f63;
+}
+
+/* Mes Projets */
+#project{
+    padding-left: 20px;
+    padding-top: 30px;
+    background-color: #ffffff;
+}
+
+#card-parent{
+    padding: 100px 20px 100px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-arround{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+.card{
+    display: flex;
+    padding: 10px;
+    background-color: #f9b203;
+    width: 210px;
+    height: 300px;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 3px 9px 0px #000000db;
+}
+
+.card-child{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+}
+
+.card-child h3, .card-child h5{
+    text-align: center;
+}
+
+/* A Propos de Moi */
+#qsj-content{
+    padding: 30px;
+    background-color: #035f63;
+    color: #ffffffed;
+    display: flex;
+}
+
+#qsj-img{
+    padding: 30px;
+}
+
+#qsj-text, .qsj-bloc{
+    padding: 20px;
+}
+
+
+/* Pied de Page */
+footer{
+    color: #000000ed;
+    background-color: #49be65;
+    padding: 50px;
+}
+
+#footer-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+#footer-links a{
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 5px 20px;
+    color: #000;
+}
