@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>PortFolio - Acceuil</title>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-            <h1 id="logo">PortFolio</h1>
-        <ul>
-            <li>
-                <a href="index.html">Acceuil</a>
-            </li>
-            <li>
-                <a href="#project">Mes Projets</a></li>
-            <li>
-                <a href="#qsj-content">A propos de moi</a>
-            </li>
-        </ul>
+        <!-- Titre -->
+        <h1 class="logo">Portfolio</h1>
+        <!-- Div pour séparer le Titre et les liens -->
+        <div id="parent">
+            <!-- Diférents liens -->
+            <a href="index.html" id="nav1">Acceuil</a>
+            <a href="#project" id="nav2">Mes Projets</a></li>
+            <a href="#qsj-content" id="nav3">A propos de moi</a>
+            <!-- Menu burger [Image supperposé] -->
+            <img src="assets/menu.png" alt="menu" id="img_1" class="superpose">
+            <img src="assets/menu_close.png" alt="menu_close" id="img_2" class="superpose">
+        </div>
     </nav>
     <!-- La partie haute (header) qui contient le début de la page d'accueil -->
     <header>
@@ -37,29 +39,56 @@
                 <div class="card">
                     <div class="card-child">
                         <!-- card -->
-                        <h3>PortFolio</h3>
-                        <h5>Site Web qui regroupe mes différents projets</h5>            
+                        <div class="icon">
+                            <img src="assets/icon_portfolio.png" alt="Icon">
+                        </div>
+                        <div class="bg-title"><!-- *bg = les initiales de "BackGround" [arrière-plan] -->
+                            <a href="#parent">
+                                <h3>PortFolio</h3>
+                            </a>
+                        </div>                       
+                        <div class="bg-subtitle">
+                        <h5>Site Web qui regroupe mes différents projets</h5>   
+                        </div>                                 
                     </div>   
                 </div>
                 <div class="card">
                     <div class="card-child">
                         <!-- card -->
-                        <h3>Mon Projet</h3>
-                        <h5>subtitle</h5>                    
+                        <div class="icon">
+                            <img src="" alt="Icon">
+                        </div>
+                        <div class="bg-title">
+                            <a href="#parent">
+                                <h3>Mon Projet</h3>
+                            </a>
+                        </div>
+                        <div class="bg-subtitle">
+                        <h5>subtitle</h5>       
+                        </div>             
                     </div>   
                 </div>
                 <div class="card">
                     <div class="card-child">
                         <!-- card -->
-                        <h3>Mon Projet</h3>
-                        <h5>subtitle</h5>                    
+                        <div class="icon">
+                            <img src="" alt="Icon">
+                        </div>
+                        <div class="bg-title">
+                            <a href="#parent">
+                                <h3>Mon Projet</h3>
+                            </a>
+                        </div>
+                        <div class="bg-subtitle">
+                        <h5>subtitle</h5>     
+                        </div>
                     </div>   
                 </div>
             </div>       
         </div>
     </div>
     <!-- Contenu qui présente "A propos de moi" -->
-    <div id="qsj-content"> <!-- *qsj = les initiales de "Qui Suis Je ?"-->
+    <div id="qsj-content"> <!-- *qsj = les initiales de "Qui Suis Je ?" -->
         <div id="qsj-img">
             <img src="#" alt="img_profile">
         </div>
@@ -86,6 +115,7 @@
             <h1 id="footer-title">Contact</h1>
             <a href="https://www.linkedin.com/in/david-anselmet/" target="_blank">LinkedIn</a>
         </div>
+        <p>Version 1.0</p>
     </footer>
 </body>
 </html>

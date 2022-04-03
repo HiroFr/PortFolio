@@ -6,67 +6,145 @@
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
-    
+}
+
+@media screen and (max-width : 930px){
+
+    #card-arround{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #qsj-content{
+        flex-direction: column;
+    }
+
 }
 
 /* Navigation */
 nav{
-    display: block;
-    background-color: #fb6300;
-    color: #fff;
+    width: 100%;
+    font-weight: 500;
 }
 
-#logo{
+.logo{
     float: left;
+    display: block;
+    font-size: 25px;
     padding: 20px;
-}
-
-nav ul{
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav li{
-    padding: 30px;
-}
-
-nav li:hover{
-    background-color: #ff8a3c;
-}
-
-a{
     color: #fff;
+}
+
+nav{
+    width: 100%;
+}
+
+nav div{
+    float: right;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+nav img{
+    cursor: pointer;
+}
+
+#nav3{
+    margin-right: 100px;
+}
+
+#nav1, #nav2, #nav3 {
+    text-decoration: none;
+    color: #fff;
+    animation: 1.5s nav forwards;
+      transform:translateX(100%);
+}
+
+@keyframes nav {
+    to {
+      transform:translateX(0);
+    }
+}
+
+#parent {
+    position: relative;
+}
+
+img.superpose {
+    position: absolute;
+}
+
+#img_1 {
+    z-index: 10;
+    margin-top: 25px;
+}
+
+#img_2 {
+    z-index: 11;
+}
+
+@media screen and (max-width : 720px){
+    #center{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width : 598px){
+
+    #img_2 {
+        margin-bottom: 150px;
+    }
+
+    #nav1, #nav2, #nav3{
+        animation: 1.5s nav forwards;
+          transform:translateY(-100%);
+    }
+    @keyframes nav {
+        to {
+          transform:translateY(0);
+        }
+    }
+
+}
+
+@media screen and (max-width : 425px){
+
+    #nav3{
+        margin-right: 10px;
+    }
+
 }
 
 /* header */
 header{
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url("assets/Background_portfolio.png");
-    background-repeat: no-repeat;
+    background-image: url(assets/background_header.png);
     background-size: cover;
-    border-top: 1px solid #fb6300ab;
+    background-repeat: no-repeat;
 }
 
 #header-text{
     text-align: center;
     margin: 230px 0px;
     font-size: large;
-    color: #035f63;
+    color: #ffffff;
+    text-shadow: 4px 4px 2px #000;
 }
 
 #header-text h3{
     font-weight: normal;
-    color: #035f63;
+    color: #ffffff;
 }
 
 /* Mes Projets */
 #project{
     padding-left: 20px;
     padding-top: 30px;
-    background-color: #ffffff;
+    background-color: #f6da63ff;
 }
 
 #card-parent{
@@ -80,16 +158,28 @@ header{
     gap: 100px;
 }
 
+.icon{
+    background-color: #eb8242ff;
+    border-radius: 30px;
+}
+
+.icon img{
+    padding: 10px;
+    width: 100%;
+}
+
 .card{
     display: flex;
     padding: 10px;
-    background-color: #f9b203;
-    width: 210px;
+    background-color: #111d5eff;
+    width: 200px;
     height: 300px;
     align-items: flex-end;
     justify-content: center;
     border-radius: 20px;
     box-shadow: 2px 3px 9px 0px #000000db;
+    color: #fff;
+    opacity: 0.952;
 }
 
 .card-child{
@@ -99,29 +189,43 @@ header{
     gap: 10px;
 }
 
-.card-child h3, .card-child h5{
-    text-align: center;
+.bg-title, .bg-subtitle{
+    background-color: #0a0d3bff;
+    border-radius: 30px;
 }
 
-@media screen and (max-width : 930px){
+.bg-title a{
+    color: #fff;
+}
 
-    #card-arround{
-        flex-direction: column;
-        gap: 50px;
-    }
+.bg-title a:hover{
+    color: #0a0d3bff;
+    cursor: pointer;
+}
 
+.bg-title:hover{
+    background-color: #fff;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+.bg-title h3, .bg-subtitle h5{
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
 }
 
 /* A Propos de Moi */
 #qsj-content{
     padding: 30px;
-    background-color: #035f63;
-    color: #ffffffed;
+    background-color: #49be65;
     display: flex;
 }
 
 #qsj-img{
     padding: 30px;
+    background-color: #f6da63ff;
+    border-radius: 20px;
 }
 
 #qsj-text, .qsj-bloc{
@@ -131,8 +235,8 @@ header{
 
 /* Pied de Page */
 footer{
-    color: #000000ed;
-    background-color: #49be65;
+    color: #fff;
+    background-color: #15173d;
     padding: 50px;
 }
 
@@ -147,5 +251,11 @@ footer{
     border: 1px solid;
     border-radius: 30px;
     padding: 5px 20px;
-    color: #000;
+    color: #fff;
+}
+
+footer p{
+    padding: 20px 10px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
 }
