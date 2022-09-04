@@ -5,117 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <title>PortFolio - Acceuil</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Portfolio - Home</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <!-- Titre -->
-        <h1 class="logo">Portfolio</h1>
-        <!-- Div pour séparer le Titre et les liens -->
-        <div id="parent">
-            <!-- Diférents liens -->
-            <a href="index.html" id="nav1">Acceuil</a>
-            <a href="#project" id="nav2">Mes Projets</a></li>
-            <a href="#qsj-content" id="nav3">A propos de moi</a>
-            <!-- Menu burger [Image supperposé] -->
-            <img src="assets/menu.png" alt="menu" id="img_1" class="superpose">
-            <img src="assets/menu_close.png" alt="menu_close" id="img_2" class="superpose">
+    <!-- La partie haute qui contient le début de la page d'accueil -->
+    <div id="navhead">
+        <nav>
+            <!-- Titre -->
+            <div id="navigation">
+                <h2>Portfolio</h2>
+            </div>
+            <ul> <!--Navigation-->
+                <a class="nav-effet" href="#">Home</a>
+                <a class="nav-effet" href="#project">Mes petits projets</a>
+                <a class="nav-effet" href="#aboutme">A propos de moi</a>
+            </ul>
+        </nav>
+        
+    <div id="head">
+        <div id="slogan">
+            <h2>Bienvenue sur le PortFolio !</h2>
+        </div> <!--Image d'illustration-->
+        <div id="slogan-img">
+            <img src="asset/Illustration_cloud.png" alt="Illustration">
         </div>
-    </nav>
-    <!-- La partie haute (header) qui contient le début de la page d'accueil -->
-    <header>
-        <div id="header-text">
-            <h1>Hello World !</h1>
-            <h3>Voyagez et découvrez le PortFolio . . .</h3>
+    </div>
+    </div>
+
+    <!-- Contenu qui présente "Mes petits Projets" -->
+    <div id="project">
+        <div id="project-title">
+        <h2>Mes petits projets</h2>            
         </div>
-    </header>
-    <!-- Contenu qui présente "Mes Projets" -->
-    <div id="project" >
-        <h1>Mes Projets</h1>
         <div id="card-parent">
-            <div id="card-arround">
-                <div class="card">
-                    <div class="card-child">
-                        <!-- card -->
-                        <div class="icon">
-                            <img src="assets/icon_portfolio.png" alt="Icon">
-                        </div>
-                        <div class="bg-title"><!-- *bg = les initiales de "BackGround" [arrière-plan] -->
-                            <a href="#parent">
-                                <h3>PortFolio</h3>
-                            </a>
-                        </div>                       
-                        <div class="bg-subtitle">
-                        <h5>Site Web qui regroupe mes différents projets</h5>   
-                        </div>                                 
+            <div id="card-child1">
+                <img src="asset/icon_portfolio_space.png" alt="icon_portfolio">
+                <div class="global-card">
+                    <div class="card-title">
+                        <a href="#navhead">
+                        <h2>PortFolio</h2>  
+                        </a>
+                    </div>
+                    <div class="card-text">
+                        <p>Site Web qui regroupe mes différents projets</p>
                     </div>   
                 </div>
-                <div class="card">
-                    <div class="card-child">
-                        <!-- card -->
-                        <div class="icon">
-                            <img src="" alt="Icon">
-                        </div>
-                        <div class="bg-title">
-                            <a href="#parent">
-                                <h3>Mon Projet</h3>
-                            </a>
-                        </div>
-                        <div class="bg-subtitle">
-                        <h5>subtitle</h5>       
-                        </div>             
-                    </div>   
+            </div>
+            <div id="card-child2">
+                <img src="asset/icon_planet.png" alt="icon_portfolio_space" id="img_porfolio">
+                <div class="global-card">
+                <div class="card-title">
+                    <h2>WebSpace</h2>
                 </div>
-                <div class="card">
-                    <div class="card-child">
-                        <!-- card -->
-                        <div class="icon">
-                            <img src="" alt="Icon">
-                        </div>
-                        <div class="bg-title">
-                            <a href="#parent">
-                                <h3>Mon Projet</h3>
-                            </a>
-                        </div>
-                        <div class="bg-subtitle">
-                        <h5>subtitle</h5>     
-                        </div>
-                    </div>   
+                <div class="card-text">
+                    <p>Un Site Web sur le thème de l'espace qui va vous faire voyager !</p>
                 </div>
-            </div>       
+                </div>
+            </div>
+            <div id="card-child3">
+                <img src="asset/icon.png" alt="icon_portfolio">
+                <div class="global-card">
+                <div class="card-title">
+                    <h2>Prochainement</h2>
+                </div>
+                <div class="card-text">
+                    <p>Pas de description pour le moment</p>
+                </div>
+                </div>
+            </div>
+            <div id="card-child4">
+                <img src="asset/icon.png" alt="icon_portfolio">
+                <div class="global-card">
+                <div class="card-title">
+                    <h2>Prochainement</h2>
+                </div>
+                <div class="card-text">
+                    <p>Pas de description pour le moment</p>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <!-- Contenu qui présente "A propos de moi" -->
-    <div id="qsj-content"> <!-- *qsj = les initiales de "Qui Suis Je ?" -->
-        <div id="qsj-img">
-            <img src="#" alt="img_profile">
+    <div id="aboutme">
+        <div id="aboutme-title">
+            <h2>A propos de moi</h2>
         </div>
-        <div id="qsj-text">
-            <h2>Hello ! Moi c'est David, 21 ans, Grand passionné par l'informatique / Programmation !</h2>
-            <di class="qsj-bloc">
-                <h4>Diplôme :</h4>
-                <p>BAC PRO MELEC [Métiers de l'électricité et de ses environnements connectés]</p>                
-            </di>
-            <di class="qsj-bloc">
-                <h4>Mes compétences :</h4>
-                <ul>
-                    <li>HTML / CSS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>PHP</li>
-                    <li>NodeJS</li>
-                </ul>
-            </di>
+        <div id="profil">
+            <div id="profil-img">
+                <img src="asset/img_profil.png" alt="img_profil">
+            </div>
+            <div id="profil-text">
+                <p>
+                Hello ! Moi c'est David, 21 ans, Grand passionné par l'informatique / Programmation !
+                Je suis passionnée par le domaine de l'informatique et les nouvelles technologies depuis plusieurs année.<br><br>
+                Diplômé du Baccalauréat Professionnel MELEC (Métiers de l'électricité et des ses Environnements Connectés),
+                je m'oriente vers un BTS SIO option B: SLAM (Service Informatiques aux Organisations, Solutions Logicielles et Applications Métiers)
+                pour réaliser mon rêve qui est de devenir Développeur.
+                </p>
+            </div>
+            <div id="profil-icon">
+                <a href="https://fr.linkedin.com/in/david-anselmet?trk=people-guest_people_search-card">
+                    <img src="asset/Icon_custom.png" alt="icon1">
+                </a>
+                <a href="https://fr.linkedin.com/in/david-anselmet?trk=people-guest_people_search-card">
+                    <img src="asset/Icon_custom.png" alt="icon2">
+                </a>
+                <a href="https://fr.linkedin.com/in/david-anselmet?trk=people-guest_people_search-card">
+                    <img src="asset/Icon_custom.png" alt="icon3">
+                </a>
+            </div>
+        </div>
+        <div id="version">
+            <h3>Made by <a href="https://github.com/HiroFr">HiroFr</a> - Version 1.5</h3>
         </div>
     </div>
-    <!-- Pied de Page (footer) -->
-    <footer>
-        <div id="footer-links">
-            <h1 id="footer-title">Contact</h1>
-            <a href="https://www.linkedin.com/in/david-anselmet/" target="_blank">LinkedIn</a>
-        </div>
-        <p>Version 1.0</p>
-    </footer>
+
 </body>
 </html>
