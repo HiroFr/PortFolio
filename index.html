@@ -1,127 +1,179 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Portfolio - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/grid.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <script src="https://unpkg.com/akar-icons-fonts"></script>
+  <title>Portfolio - David Anselmet</title>
 </head>
 <body>
-    <!-- La partie haute qui contient le début de la page d'accueil -->
-    <div id="navhead">
-        <nav>
-            <!-- Titre -->
-            <div id="navigation">
-                <h2>Portfolio</h2>
-            </div>
-            <ul> <!--Navigation-->
-                <a class="nav-effet" href="#">Home</a>
-                <a class="nav-effet" href="#project">Mes petits projets</a>
-                <a class="nav-effet" href="#aboutme">A propos de moi</a>
-            </ul>
-        </nav>
-        
-    <div id="head">
-        <div id="slogan">
-            <h2>Bienvenue sur le PortFolio !</h2>
-        </div> <!--Image d'illustration-->
-        <div id="slogan-img">
-            <img src="asset/Illustration_cloud.png" alt="Illustration">
-        </div>
+  <div class="nav-menu">
+      <div class="logo-menu">
+          <span>David</span>
+          <span>Anselmet</span>
+      </div>
+      <div class="link-menu">
+        <span><a href="#">Home</a></span>
+        <span><a href="#am">A propos de moi</a></span>
+        <span><a href="#p">Les projets</a></span>
+      </div>
+      <div class="icon-menu">
+        <a href="https://www.linkedin.com/in/david-anselmet" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="filter-lk"></a>
+        <a href="https://github.com/HiroFr" target="_blank"><img src="assets/img/github.svg" alt="GitHub" class="filter-gh"></a>
+        <a href="https://twitter.com/Hir0Fr" target="_blank"><img src="assets/img/x.svg" alt="X" class="filter-x"></a>
+      </div>
+  </div>
+  <div class="head-menu2">
+  <div class="head-menu">
+    <div class="welcome-menu">
+      <div class="div-title-menu">
+        <p class="title-menu">Hello! Je suis <span>David</span>,<br> Développeur et<br> Designer UI/UX</p>
+      </div>
+      <div class="call-to-action">
+        <span>Voir mes projets ?</span>
+        <div class="btn-see-project">
+          <a href="#p" class="hover-btn"><i class="ai-book-open"></i> Mes projets</a>
+      </div>
+      </div>
     </div>
+    <div class="img-menu">
+      <img src="assets/img/img_moi2.jpeg" alt="Moi">
     </div>
-
-    <!-- Contenu qui présente "Mes petits Projets" -->
-    <div id="project">
-        <div id="project-title">
-        <h2>Mes petits projets</h2>            
+  </div>
+  <a href="#am" class="scroll-to-next"><i class="ai-chevron-down"></i></a>
+  </div>
+  <div class="about-me" id="am">
+    <div class="angry-grid">
+      <div class="item-0">
+        <span class="item-0-title">Skill</span>
+        <div class="skill"> <!-- ajouter les couleurs correspondant aux language de programmation -->
+          <span class="red">HTML/CSS</span>
+          <span class="yellow">JavaScript</span>
+          <span class="green">NodeJS</span>
+          <span class="blue">TypeScript</span>
+          <span class="aqua">ReactJS</span>
+          <span class="blue">PHP</span>
+          <span class="pink">SQL/NoSQL</span>
+          <span class="purple">Agilité</span>
+          <span class="purple">Git</span>
         </div>
-        <div id="card-parent">
-            <div id="card-child1">
-                <img src="asset/icon_portfolio_space.png" alt="icon_portfolio">
-                <div class="global-card">
-                    <div class="card-title">
-                        <a href="#navhead">
-                        <h2>PortFolio</h2>  
-                        </a>
-                    </div>
-                    <div class="card-text">
-                        <p>Site Web qui regroupe mes différents projets</p>
-                    </div>   
-                </div>
-            </div>
-            <div id="card-child2">
-                <img src="asset/icon_planet.png" alt="icon_portfolio_space" id="img_porfolio">
-                <div class="global-card">
-                <div class="card-title">
-                    <h2>WebSpace</h2>
-                </div>
-                <div class="card-text">
-                    <p>Un Site Web sur le thème de l'espace qui va vous faire voyager !</p>
-                </div>
-                </div>
-            </div>
-            <div id="card-child3">
-                <img src="asset/icon.png" alt="icon_portfolio">
-                <div class="global-card">
-                <div class="card-title">
-                    <h2>Prochainement</h2>
-                </div>
-                <div class="card-text">
-                    <p>Pas de description pour le moment</p>
-                </div>
-                </div>
-            </div>
-            <div id="card-child4">
-                <img src="asset/icon.png" alt="icon_portfolio">
-                <div class="global-card">
-                <div class="card-title">
-                    <h2>Prochainement</h2>
-                </div>
-                <div class="card-text">
-                    <p>Pas de description pour le moment</p>
-                </div>
-                </div>
-            </div>
+      </div>
+      <div class="item-1">
+        <span>22</span>
+        <span>Ans</span>
+      </div>
+      <div class="item-2">
+        <span>13<small>mois</small></span>
+        <span>Exp.</span>
+      </div>
+      <div class="item-3">
+        <span class="title3">Récents projets</span>
+        <div class="present-project">
+          <span class="present-title">HiroToDo</span>
+          <span class="present-description">Ajouter, modifier, supprimer votre note depuis votre navigateur Chrome</span>
+          <a class="present-btn-link" href="https://github.com/HiroFr/HiroToDo/tree/main" target="_blank">Voir le projet</a>
         </div>
+      </div>
+      <a class="item-4 hover-btn" href="assets/files/CV-David.pdf" target="_blank"><i class="ai-telescope"></i>Voir le CV</a>
+      <div class="item-5">
+        <div class="item-5-display">
+          <span>Diplôme</span>
+          <span>BAC PRO MELEC
+            (Métier électrique et de ses environnement connectés)</span>
+        </div>
+        <div class="separation"></div>
+        <div class="item-5-display">
+          <span>Prochainement</span>
+          <span>Une nouvel formation bientôt !</span>
+        </div>
+      </div>
+      <div class="item-7">
+        <span>Hey !
+          <br>
+          Je suis un esprit créatif avec une passion pour l'innovation, qui cherche à apporter une touche de magie à tout ce que je fais.
+          <br>
+          <br>
+          <b>Développeur passionné</b>, j’ai appris en autodidacte et a suivi une formation de 13 mois en alternance pour confirmer mes compétences.
+          <br>
+          <i>Je continue ma route</i> vers une nouvel aventure, pour <i><b>obtenir un diplôme qui valorisera mes compétences</b></i> et <i><b>mes capacités.</b></i>
+          <br>
+          <br>
+          Passionnée par le web design depuis plus d’un an, je continue chaque jour de persévérer en autodidacte.</span>
+      </div>
     </div>
-
-    <!-- Contenu qui présente "A propos de moi" -->
-    <div id="aboutme">
-        <div id="aboutme-title">
-            <h2>A propos de moi</h2>
+  </div>
+  <section class="project" id="p">
+    <div class="all-box">
+      <div class="box">
+        <div class="box-head">
+          <img src="assets/img/PortFolio128.png" alt="PortFolio">
+          <div class="box-header">
+            <span class="box-title">Portfolio</span>
+            <span class="box-subtitle"><i class="ai-android-fill"></i> Site Web</span>
+          </div>
         </div>
-        <div id="profil">
-            <div id="profil-img">
-                <img src="asset/img_profil.png" alt="img_profil">
-            </div>
-            <div id="profil-text">
-                <p>
-                Hello ! Moi c'est David, 21 ans, Grand passionné par l'informatique / Programmation !
-                Je suis passionnée par le domaine de l'informatique et les nouvelles technologies depuis plusieurs année.<br><br>
-                Diplômé du Baccalauréat Professionnel MELEC (Métiers de l'électricité et des ses Environnements Connectés),
-                je m'oriente vers un BTS SIO option B: SLAM (Service Informatiques aux Organisations, Solutions Logicielles et Applications Métiers)
-                pour réaliser mon rêve qui est de devenir Développeur.
-                </p>
-            </div>
-            <div id="profil-icon">
-                <a href="https://fr.linkedin.com/in/david-anselmet?trk=people-guest_people_search-card">
-                    <img src="asset/Icon_custom.png" alt="icon1">
-                </a>
-                <a href="https://fr.linkedin.com/in/david-anselmet?trk=people-guest_people_search-card">
-                    <img src="asset/Icon_custom.png" alt="icon2">
-                </a>
-                <a href="https://fr.linkedin.com/in/david-anselmet?trk=people-guest_people_search-card">
-                    <img src="asset/Icon_custom.png" alt="icon3">
-                </a>
-            </div>
+        <div class="box-description">
+          <p class="">Un site web personnel et professionnel pour montrer son cv de manière ludique.</p>
         </div>
-        <div id="version">
-            <h3>Made by <a href="https://github.com/HiroFr">HiroFr</a> - Version 1.5</h3>
+        <div class="back-to-link">
+          <a href="https://github.com/HiroFr/PortFolio" target="_blank" class="">Découvrir le projet <i class="ai-arrow-right"></i></a>
         </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="assets/img/HiroToDo128.png" alt="HiroToDo">
+          <div class="box-header">
+            <span class="box-title">HiroToDo</span>
+            <span class="box-subtitle"><i class="ai-globe"></i> Extension Chrome</span>
+          </div>
+        </div>
+        <div class="box-description">
+          <p class="">Ajouter, modifier, supprimer votre note depuis votre navigateur Chrome.</p>
+        </div>
+        <div class="back-to-link">
+          <a href="https://github.com/HiroFr/HiroToDo/tree/main" target="_blank" class="">Découvrir le projet <i class="ai-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="assets/img/Test_Git.png" alt="Test_Git">
+          <div class="box-header">
+            <span class="box-title">Test_Git</span>
+            <span class="box-subtitle"><i class="ai-file"></i> Training Git</span>
+          </div>
+        </div>
+        <div class="box-description">
+          <p class="">Repositorie qui permet de m'entrainer avec les commandes Git.</p>
+        </div>
+        <div class="back-to-link">
+          <a href="https://github.com/HiroFr/Test_Git" target="_blank" class="">Découvrir le projet <i class="ai-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="assets/img/DevReference.png" alt="DevReference">
+          <div class="box-header">
+            <span class="box-title">DevReference</span>
+            <span class="box-subtitle"><i class="ai-save"></i> Wiki Tools</span>
+          </div>
+        </div>
+        <div class="box-description">
+          <p class="">Un repositorie pour répertorier tout les outils qu'un développeur aurait besoin.</p>
+        </div>
+        <div class="back-to-link">
+          <a href="https://github.com/HiroFr/DevReference" target="_blank" class="">Découvrir le projet <i class="ai-arrow-right"></i></a>
+        </div>
+      </div>
     </div>
-
+  </section>
+    <i class="ai-arrow-up backToTopBtn"></i>
+  <footer>
+    <span>Made and Design By <a class="infos-author-portfolio" href="https://github.com/HiroFr">HiroFr</a></span>
+    <span><a class="infos-author-icons" href="https://github.com/artcoholic/akar-icons-app" target="_blank">Icons by Arturo Wibawa</a></span>
+  </footer>
+  <script src="backToScroll.js"></script>
 </body>
 </html>
