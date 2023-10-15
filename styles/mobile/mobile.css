@@ -1,0 +1,135 @@
+@media screen and (max-width: 425px) {
+
+  body {
+    margin: 8px;
+  }
+
+  /* -- Nav Menu -- */
+
+  .burger-menu {
+    display: block;
+  }
+
+  .link-menu, .icon-menu {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    width: 100%;
+    box-shadow: 0px 2px 1px 0px #efefef;
+  }
+
+  /* -- Head Menu 2 -- */
+
+  .head-menu2 {
+    display: block;
+    height: auto;
+    margin-top: 22px;
+  }
+
+  .head-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .img-menu img {
+    width: 300px;
+  }
+
+  .title-menu {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .call-to-action {
+    align-items: center;
+  }
+
+  .btn-see-project a {
+    width: auto;
+  }
+
+  .scroll-to-next {
+    color: #fff;
+  }
+
+  /* -- GRID CSS -- */
+
+  .angry-grid {
+    display: grid; 
+
+    grid-template-rows: 1fr 1fr 6% 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   
+    grid-template-areas: 
+	    'skill skill skill year exp exp'
+	    'skill skill skill recent-project recent-project recent-project'
+	    'cv cv cv cv cv cv'
+	    'texte texte texte texte texte texte'
+	    'texte texte texte texte texte texte'
+	    'formation formation formation formation formation formation';
+   
+    gap: 8px;
+    height: 100%;
+   
+  }
+  
+  .item-0 {
+    background-color: #fff9eb; 
+    grid-area: skill;
+    padding: 12px;
+  }
+
+  .item-0-title {
+    font-size: 32px;
+  }
+
+  .item-1 {
+    background-color: #f1edff; 
+    grid-area: year;
+    font-size: 32px;
+  }
+
+  .item-2 {
+    background-color: #f1edff; 
+    grid-area: exp;
+    font-size: 32px; 
+  }
+
+  .item-3 {
+    background-color: #fff9eb; 
+    grid-area: recent-project;
+  }
+
+  .item-4 {
+    background-color: #7a4fff; 
+    grid-area: cv;
+  }
+
+  .item-5 {
+    background-color: #ffffff; 
+    grid-area: texte;
+    padding-bottom: 32px;
+  }
+
+  .item-6 {
+    background-color: #ebfff5; 
+    grid-area: formation;  
+  }
+
+
+  /* -- Project -- */
+  .project {
+    height: auto;
+    margin-top: 22%;
+  }
+
+  /* -- Footer -- */
+  footer {
+    margin-top: 22px;
+  }
+
+}

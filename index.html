@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/variables.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles/grid.css">
+  <link rel="stylesheet" href="styles/mobile/mobile.css">
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <script src="https://unpkg.com/akar-icons-fonts"></script>
   <title>Portfolio - David Anselmet</title>
@@ -24,6 +26,12 @@
         <a href="https://www.linkedin.com/in/david-anselmet" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn" class="filter-lk"></a>
         <a href="https://github.com/HiroFr" target="_blank"><img src="assets/img/github.svg" alt="GitHub" class="filter-gh"></a>
         <a href="https://twitter.com/Hir0Fr" target="_blank"><img src="assets/img/x.svg" alt="X" class="filter-x"></a>
+      </div>
+      <i class="ai-three-line-horizontal burger-menu" id="burger-menu"></i>
+      <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#am">A propos de moi</a>
+        <a href="#p">Les projets</a>
       </div>
   </div>
   <div class="head-menu2">
@@ -45,63 +53,61 @@
   </div>
   <a href="#am" class="scroll-to-next"><i class="ai-chevron-down"></i></a>
   </div>
-  <div class="about-me" id="am">
-    <div class="angry-grid">
-      <div class="item-0">
-        <span class="item-0-title">Skill</span>
-        <div class="skill"> <!-- ajouter les couleurs correspondant aux language de programmation -->
-          <span class="red">HTML/CSS</span>
-          <span class="yellow">JavaScript</span>
-          <span class="green">NodeJS</span>
-          <span class="blue">TypeScript</span>
-          <span class="aqua">ReactJS</span>
-          <span class="blue">PHP</span>
-          <span class="pink">SQL/NoSQL</span>
-          <span class="purple">Agilité</span>
-          <span class="purple">Git</span>
-        </div>
+  <div class="angry-grid" id="am">
+    <div class="item-0">
+      <span class="item-0-title">Skill</span>
+      <div class="skill"> <!-- ajouter les couleurs correspondant aux language de programmation -->
+        <span class="red">HTML/CSS</span>
+        <span class="yellow">JavaScript</span>
+        <span class="green">NodeJS</span>
+        <span class="blue">TypeScript</span>
+        <span class="aqua">ReactJS</span>
+        <span class="blue">PHP</span>
+        <span class="pink">SQL/NoSQL</span>
+        <span class="purple">Agilité</span>
+        <span class="purple">Git</span>
       </div>
-      <div class="item-1">
-        <span>22</span>
-        <span>Ans</span>
+    </div>
+    <div class="item-1">
+      <span>22</span>
+      <span>Ans</span>
+    </div>
+    <div class="item-2">
+      <span>13<small>mois</small></span>
+      <span>Exp.</span>
+    </div>
+    <div class="item-3">
+      <span class="title3">Récents projets</span>
+      <div class="present-project">
+        <span class="present-title">HiroToDo</span>
+        <span class="present-description">Ajouter, modifier, supprimer votre note depuis votre navigateur Chrome</span>
+        <a class="present-btn-link" href="https://github.com/HiroFr/HiroToDo/tree/main" target="_blank">Voir le projet</a>
       </div>
-      <div class="item-2">
-        <span>13<small>mois</small></span>
-        <span>Exp.</span>
+    </div>
+    <a class="item-4 hover-btn" href="assets/files/CV-David.pdf" target="_blank"><i class="ai-telescope"></i>Voir le CV</a>
+    <div class="item-5">
+      <span>Hey !
+        <br>
+        Je suis un esprit créatif avec une passion pour l'innovation, qui cherche à apporter une touche de magie à tout ce que je fais.
+        <br>
+        <br>
+        <b>Développeur passionné</b>, j’ai appris en autodidacte et a suivi une formation de 13 mois en alternance pour confirmer mes compétences.
+        <br>
+        <i>Je continue ma route</i> vers une nouvel aventure, pour <i><b>obtenir un diplôme qui valorisera mes compétences</b></i> et <i><b>mes capacités.</b></i>
+        <br>
+        <br>
+        Passionnée par le web design depuis plus d’un an, je continue chaque jour de persévérer en autodidacte.</span>
+    </div>
+    <div class="item-6">
+      <div class="item-6-display">
+        <span>Diplôme</span>
+        <span>BAC PRO MELEC
+          (Métier électrique et de ses environnement connectés)</span>
       </div>
-      <div class="item-3">
-        <span class="title3">Récents projets</span>
-        <div class="present-project">
-          <span class="present-title">HiroToDo</span>
-          <span class="present-description">Ajouter, modifier, supprimer votre note depuis votre navigateur Chrome</span>
-          <a class="present-btn-link" href="https://github.com/HiroFr/HiroToDo/tree/main" target="_blank">Voir le projet</a>
-        </div>
-      </div>
-      <a class="item-4 hover-btn" href="assets/files/CV-David.pdf" target="_blank"><i class="ai-telescope"></i>Voir le CV</a>
-      <div class="item-5">
-        <div class="item-5-display">
-          <span>Diplôme</span>
-          <span>BAC PRO MELEC
-            (Métier électrique et de ses environnement connectés)</span>
-        </div>
-        <div class="separation"></div>
-        <div class="item-5-display">
-          <span>Prochainement</span>
-          <span>Une nouvel formation bientôt !</span>
-        </div>
-      </div>
-      <div class="item-7">
-        <span>Hey !
-          <br>
-          Je suis un esprit créatif avec une passion pour l'innovation, qui cherche à apporter une touche de magie à tout ce que je fais.
-          <br>
-          <br>
-          <b>Développeur passionné</b>, j’ai appris en autodidacte et a suivi une formation de 13 mois en alternance pour confirmer mes compétences.
-          <br>
-          <i>Je continue ma route</i> vers une nouvel aventure, pour <i><b>obtenir un diplôme qui valorisera mes compétences</b></i> et <i><b>mes capacités.</b></i>
-          <br>
-          <br>
-          Passionnée par le web design depuis plus d’un an, je continue chaque jour de persévérer en autodidacte.</span>
+      <div class="separation"></div>
+      <div class="item-6-display">
+        <span>Prochainement</span>
+        <span>Une nouvel formation bientôt !</span>
       </div>
     </div>
   </div>
@@ -174,6 +180,7 @@
     <span>Made and Design By <a class="infos-author-portfolio" href="https://github.com/HiroFr">HiroFr</a></span>
     <span><a class="infos-author-icons" href="https://github.com/artcoholic/akar-icons-app" target="_blank">Icons by Arturo Wibawa</a></span>
   </footer>
-  <script src="backToScroll.js"></script>
+  <script src="js/backToScroll.js"></script>
+  <script src="js/menuBurger.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+html {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  --bg-color-purple: #7A4FFF;
+  --bg-color-purple-hover: #6836ff;
+  --bg-color-black: #000;
+  --bg-color-black-opacity: #00000033;
+  --bg-color-black-opacity001: #00000026;
+  --bg-color-white000: #fff;
+  --bg-color-white001: #fcfcfc;
+  --bg-color-salmon:#fc9a9a;
+
+}
+
+body {
+  display: block;
+  margin: 0px 200px;
+}
+
+a {
+  color: var(--bg-color-white000);
+  text-decoration: none;
+}
+
+.filter-lk:hover {
+  filter: invert(17%) sepia(85%) saturate(4920%) hue-rotate(200deg) brightness(97%) contrast(92%);
+}
+
+.filter-gh:hover {
+  filter: invert(5%) sepia(36%) saturate(382%) hue-rotate(155deg) brightness(97%) contrast(107%);
+}
+
+.filter-x:hover {
+  filter: invert(0%) sepia(7%) saturate(7473%) hue-rotate(18deg) brightness(96%) contrast(108%);
+}
+
+.backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--bg-color-purple);
+  color: var(--bg-color-white000);
+  border: none;
+  border-radius: 16px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.backToTopBtn:hover {
+  background-color: var(--bg-color-purple-hover);
+}

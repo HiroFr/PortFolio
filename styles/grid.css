@@ -63,12 +63,6 @@
   padding: 4px 12px;
 }
 
-.about-me {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
 .angry-grid {
   display: grid;
@@ -191,7 +185,7 @@
 }
 
 
-.item-5 {
+.item-6 {
 
   background-color: #EBFFF5; 
   grid-row-start: 4;
@@ -204,7 +198,7 @@
   display: flex;
 }
 
-.item-7 {
+.item-5 {
 
   background-color: #ffffff; 
   grid-row-start: 1;
@@ -224,7 +218,7 @@
   border-radius: 4px;
 }
 
-.item-5-display {
+.item-6-display {
   display: flex;
   flex-direction: column;
   gap: 12px;
